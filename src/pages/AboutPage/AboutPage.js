@@ -6,7 +6,7 @@ import { DataAbout } from '../../components/InfoSection/Data';
 import Navbar from '../../components/Navbar';
 import GlobalStyle from '../../globalStyles';
 
-function HomePage() {
+function AboutPage() {
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -24,4 +24,4 @@ function HomePage() {
   )
 }
 
-export default HomePage;
+export default AboutPage;
