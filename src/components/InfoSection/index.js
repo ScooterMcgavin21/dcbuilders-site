@@ -1,10 +1,9 @@
 import React from 'react';
-import { InfoSec } from './InfoSectionElements';
 function InfoSection({lightBg}) {
   return (
-    <>
-      <InfoSec lightBg={lightBg}>h1</InfoSec>
-    </>
+    <div>
+      <h1>InfoSection</h1>
+    </div>
   );
 }
 

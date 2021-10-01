@@ -1,16 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import HeroSection from './components/HeroSection';
-import { SliderData } from './components/HeroSection/SliderData';
-//import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import GlobalStyle from './globalStyles';
+import HomePage from './pages/HomePage/HomePage';
 function App() {
   return (
     <Router>
-      <GlobalStyle />
-      <Navbar />
-      <HeroSection slides={SliderData} />
+      <HomePage />
     </Router>
   );
 }
