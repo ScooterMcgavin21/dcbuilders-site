@@ -1,5 +1,9 @@
+import { Link } from 'react-router-dom';
 import styled, { createGlobalStyle } from "styled-components";
+
 /*globalStyles.js*/
+
+
 export const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
@@ -28,8 +32,13 @@ export const Container = styled.div`
     padding-right: 30px;
   }
 `;
+/** 
+ * 
+ * 
+ * Button Contact us rendering button tag
+ * 
+ */
 
-/** Button Container rendering button tag */
 export const Button = styled.button`
   // border-radius: 4px; round square
   border-radius: 50px; // circle
@@ -43,6 +52,7 @@ export const Button = styled.button`
   outline: none;
   border: none;
   cursor: pointer;
+  
 
   &:hover {
     transition: all 0.3s ease-out;
@@ -53,6 +63,39 @@ export const Button = styled.button`
 
   @media screen and (max-width: 960px) {
     width: 100%;
+  }
+`;
+
+/** 
+ * 
+ * 
+ * Button View Homes on Herosection page
+ * 
+ */
+export const ButtonHero = styled(Link)`
+  //background: ${({ primary }) => (primary ? '#000d1a' : '#CD853F')};
+  background: ${({ primary }) => (primary ? '#101522' : '#66FCF1')};
+  white-space: nowrap;
+  outline: none;
+  border: none;
+  min-width: 100px;
+  //max-width: 200px;
+  max-width: 160px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: ${({big}) => (big ? '16px 40px' : '14px 24px')};
+  color: ${({primary}) => (primary ? '#66FCF1' : '#000d1a')};
+  //color: ${({ primary }) => (primary ? '#fff' : '#000d1a')};
+  font-size: ${({big}) => (big ? '20px' : '14px')};
+  border-radius: ${({round}) => (round ? '50px': '0px')};
+  
+
+  &:hover {
+    transform: translate(-2px);
   }
 `;
 
